@@ -12,12 +12,17 @@ main_window.maxsize(width=300, height=460)
 
 # Adding frames to the window
 
-display_frame = Frame(main_window, bg="gray", width=400, height=100, borderwidth=10, relief=SUNKEN)
-button_frame = Frame(main_window, bg="#261a0d", width=400, height=400, borderwidth=10, relief=SUNKEN)
+display_frame = Frame(main_window, bg="gray", width=400, height=100, borderwidth=10, relief=GROOVE)
+button_frame = Frame(main_window, bg="black", width=400, height=400, borderwidth=10, relief=GROOVE)
+
+# Adding label to the frame
+
+display_label = Label(display_frame, bg="white", fg="red", borderwidth=10, width=300, height=100, text="welcome",
+                      font=("helvetica", 16, "bold"))
 
 # Adding buttons to the frame
-button_dlt = Button(display_frame, bg="gray", fg="black", text="DEL", relief=FLAT, padx=10, pady=10,
-                    font=("comicsansms", 19, "bold"))
+button_dlt = Button(display_frame, bg="gray", fg="black", text="D\nE\nL", relief=FLAT, padx=1, pady=1,width=1, height=50, justify=CENTER,
+                    font=("comicsansms", 15, "bold"))
 button1 = Button(button_frame, bg="black", fg="white", text="1", padx=10, pady=10, relief=RAISED, borderwidth=10,
                  font=("comicsansms", 19, "bold"))
 button2 = Button(button_frame, bg="black", fg="white", text="2", padx=10, pady=10, relief=RAISED, borderwidth=10,
@@ -53,7 +58,8 @@ button_div = Button(button_frame, bg="black", fg="white", text="/", padx=10, pad
 
 # Adding components to the main screen
 
-button_dlt.pack(side="right", anchor="nw")
+button_dlt.pack(side="right", anchor="ne")
+display_label.pack(side="bottom", anchor="sw", fill=X)
 button_frame.pack(side="bottom", fill="x")
 
 button7.grid(row=0, column=0)
