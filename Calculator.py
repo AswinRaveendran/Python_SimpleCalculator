@@ -27,11 +27,11 @@ def click(event):
         display_label.update()
     elif text == "Sq":
         value = float(Scvalue.get())
-        Scvalue.set(value*value)
+        Scvalue.set(value * value)
         display_label.update()
     elif text == "Rt":
         value = float(Scvalue.get())
-        Scvalue.set(value**0.5)
+        Scvalue.set(value ** 0.5)
         display_label.update()
 
 
@@ -60,7 +60,7 @@ Scvalue.set("")
 
 
 display_frame = Frame(main_window, bg="pink", width=400, height=100, borderwidth=10, relief=GROOVE)
-button_frame = Frame(main_window, bg="#862d2d", width=400, height=400, borderwidth=10, relief=GROOVE)
+button_frame = Frame(main_window, bg="black", width=400, height=400, borderwidth=10, relief=GROOVE)
 
 # Adding label to the frame
 
@@ -71,47 +71,47 @@ display_label = Entry(display_frame, bg="white", fg="red", borderwidth=10, width
 # Adding buttons to the frame
 button_dlt = Button(display_frame, bg="black", fg="magenta", text="D\nE\nL", relief=FLAT, padx=1, pady=1, width=1,
                     height=50, justify=CENTER,
-                    font=("comicsansms", 15, "bold"))
-button1 = Button(button_frame, bg="black", fg="white", text="1", padx=10, pady=10, relief=RAISED, borderwidth=10,
+                    font=("comicsansms", 13, "bold"))
+button1 = Button(button_frame, bg="black", fg="white", text="1", padx=10, pady=10, relief=FLAT, borderwidth=10,
                  font=("comicsansms", 19, "bold"))
-button2 = Button(button_frame, bg="black", fg="white", text="2", padx=10, pady=10, relief=RAISED, borderwidth=10,
+button2 = Button(button_frame, bg="black", fg="white", text="2", padx=10, pady=10, relief=FLAT, borderwidth=10,
                  font=("comicsansms", 19, "bold"))
-button3 = Button(button_frame, bg="black", fg="white", text="3", padx=10, pady=10, relief=RAISED, borderwidth=10,
+button3 = Button(button_frame, bg="black", fg="white", text="3", padx=10, pady=10, relief=FLAT, borderwidth=10,
                  font=("comicsansms", 19, "bold"))
-button4 = Button(button_frame, bg="black", fg="white", text="4", padx=10, pady=10, relief=RAISED, borderwidth=10,
+button4 = Button(button_frame, bg="black", fg="white", text="4", padx=10, pady=10, relief=FLAT, borderwidth=10,
                  font=("comicsansms", 19, "bold"))
-button5 = Button(button_frame, bg="black", fg="white", text="5", padx=10, pady=10, relief=RAISED, borderwidth=10,
+button5 = Button(button_frame, bg="black", fg="white", text="5", padx=10, pady=10, relief=FLAT, borderwidth=10,
                  font=("comicsansms", 19, "bold"))
-button6 = Button(button_frame, bg="black", fg="white", text="6", padx=10, pady=10, relief=RAISED, borderwidth=10,
+button6 = Button(button_frame, bg="black", fg="white", text="6", padx=10, pady=10, relief=FLAT, borderwidth=10,
                  font=("comicsansms", 19, "bold"))
-button7 = Button(button_frame, bg="black", fg="white", text="7", padx=10, pady=10, relief=RAISED, borderwidth=10,
+button7 = Button(button_frame, bg="black", fg="white", text="7", padx=10, pady=10, relief=FLAT, borderwidth=10,
                  font=("comicsansms", 19, "bold"))
-button8 = Button(button_frame, bg="black", fg="white", text="8", padx=10, pady=10, relief=RAISED, borderwidth=10,
+button8 = Button(button_frame, bg="black", fg="white", text="8", padx=10, pady=10, relief=FLAT, borderwidth=10,
                  font=("comicsansms", 19, "bold"))
-button9 = Button(button_frame, bg="black", fg="white", text="9", padx=10, pady=10, relief=RAISED, borderwidth=10,
+button9 = Button(button_frame, bg="black", fg="white", text="9", padx=10, pady=10, relief=FLAT, borderwidth=10,
                  font=("comicsansms", 19, "bold"))
-button0 = Button(button_frame, bg="black", fg="white", text="0", padx=10, pady=10, relief=RAISED, borderwidth=10,
+button0 = Button(button_frame, bg="black", fg="white", text="0", padx=10, pady=10, relief=FLAT, borderwidth=10,
                  font=("comicsansms", 19, "bold"))
-button_dot = Button(button_frame, bg="black", fg="white", text=".", padx=10, pady=10, relief=RAISED, borderwidth=10,
+button_dot = Button(button_frame, bg="black", fg="white", text=".", padx=10, pady=10, relief=FLAT, borderwidth=10,
                     font=("comicsansms", 20, "bold"))
-button_clr = Button(button_frame, bg="black", fg="white", text="C", padx=10, pady=10, relief=RAISED, borderwidth=10,
+button_clr = Button(button_frame, bg="black", fg="white", text="C", padx=10, pady=10, relief=FLAT, borderwidth=10,
                     font=("comicsansms", 19, "bold"))
-button_add = Button(button_frame, bg="black", fg="white", text="+", padx=10, pady=10, relief=RAISED, borderwidth=10,
+button_add = Button(button_frame, bg="black", fg="white", text="+", padx=10, pady=10, relief=FLAT, borderwidth=10,
                     font=("comicsansms", 19, "bold"))
-button_minus = Button(button_frame, bg="black", fg="white", text="-", padx=10, pady=10, relief=RAISED, borderwidth=10,
+button_minus = Button(button_frame, bg="black", fg="white", text="-", padx=10, pady=10, relief=FLAT, borderwidth=10,
                       font=("comicsansms", 22, "bold"))
-button_mult = Button(button_frame, bg="black", fg="white", text="*", padx=10, pady=10, relief=RAISED, borderwidth=10,
+button_mult = Button(button_frame, bg="black", fg="white", text="*", padx=10, pady=10, relief=FLAT, borderwidth=10,
                      font=("comicsansms", 19, "bold"))
-button_div = Button(button_frame, bg="black", fg="white", text="/", padx=10, pady=10, relief=RAISED, borderwidth=10,
+button_div = Button(button_frame, bg="black", fg="white", text="/", padx=10, pady=10, relief=FLAT, borderwidth=10,
                     font=("comicsansms", 20, "bold"))
-button_equal = Button(button_frame, bg="black", fg="white", text="=", padx=10, pady=10, relief=RAISED, borderwidth=10,
+button_equal = Button(button_frame, bg="black", fg="white", text="=", padx=10, pady=10, relief=FLAT, borderwidth=10,
                       font=("comicsansms", 20, "bold"))
-button_percent = Button(button_frame, bg="black", fg="white", text="%", padx=10, pady=10, relief=RAISED, borderwidth=10,
+button_percent = Button(button_frame, bg="black", fg="white", text="%", padx=10, pady=10, relief=FLAT, borderwidth=10,
                         font=("comicsansms", 20, "bold"))
-button_squre = Button(button_frame, bg="black", fg="white", text="Sq", padx=10, pady=10, relief=RAISED, borderwidth=10,
-                      font=("comicsansms", 20, "bold"))
-button_root = Button(button_frame, bg="black", fg="white", text="Rt", padx=10, pady=10, relief=RAISED, borderwidth=10,
-                     font=("comicsansms", 20, "bold"))
+button_squre = Button(button_frame, bg="black", fg="white", text="Sq", padx=8, pady=10, relief=FLAT, borderwidth=10,
+                      font=("comicsansms", 18, "bold"))
+button_root = Button(button_frame, bg="black", fg="white", text="Rt", padx=8, pady=10, relief=FLAT, borderwidth=10,
+                     font=("comicsansms", 18, "bold"))
 
 # Adding components to the main screen
 
@@ -164,3 +164,5 @@ button_root.bind("<Button-1>", click)
 display_frame.pack(side=TOP, fill="x")
 
 main_window.mainloop()
+
+#  Code By Aswin
