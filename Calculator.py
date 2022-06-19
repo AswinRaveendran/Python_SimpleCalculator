@@ -46,6 +46,7 @@ def click(event):
 main_window = Tk()
 main_window.geometry("500x500")
 main_window.title("Calculator")
+main_window.iconbitmap("1.ico")
 main_window.config(bg="black")
 main_window.minsize(width=400, height=460)
 main_window.maxsize(width=400, height=460)
